@@ -12,17 +12,18 @@
 
 ## 바로 사용하기
 
-가장 쉬운 방법은 GitHub Releases에서 Windows ZIP 파일을 내려받아 압축을 풀고 실행하는 것입니다.
+가장 쉬운 방법은 GitHub Releases에서 `ShutdownScheduler.exe`를 내려받아 바로 실행하는 것입니다.
 
 - 다운로드: [Latest Release](https://github.com/alufia/shutdown-scheduler/releases/latest)
 
 1. Releases 페이지에서 최신 버전을 다운로드합니다.
-2. ZIP 압축을 풉니다.
-3. `ShutdownScheduler.exe`를 실행합니다.
+2. `ShutdownScheduler.exe`를 내려받습니다.
+3. 파일 하나만 실행하면 됩니다.
 
 주의:
 
-- 폴더형 배포이므로 `_internal` 폴더와 `ShutdownScheduler.exe`를 함께 유지해야 합니다.
+- 최신 빌드는 단일 파일 실행 방식입니다.
+- 처음 실행할 때는 압축 해제 준비 때문에 약간 느릴 수 있습니다.
 - 예약 취소는 앱 안의 `예약 취소` 버튼으로 할 수 있습니다.
 
 ## 실행 환경
@@ -59,7 +60,7 @@ powershell -ExecutionPolicy Bypass -File .\build.ps1
 빌드 결과물은 아래 경로에 생성됩니다.
 
 ```text
-dist\ShutdownScheduler\ShutdownScheduler.exe
+dist\ShutdownScheduler.exe
 ```
 
 ## 프로젝트 구조

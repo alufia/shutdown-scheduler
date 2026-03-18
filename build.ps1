@@ -15,6 +15,7 @@ Remove-Item (Join-Path $root "dist") -Recurse -Force -ErrorAction SilentlyContin
 & $python -m PyInstaller `
     --noconfirm `
     --clean `
+    --onefile `
     --windowed `
     --name "ShutdownScheduler" `
     --icon ".\assets\shutdown_scheduler.ico" `
@@ -23,4 +24,4 @@ Remove-Item (Join-Path $root "dist") -Recurse -Force -ErrorAction SilentlyContin
 
 Write-Host ""
 Write-Host "Build complete:"
-Write-Host (Join-Path $root "dist\ShutdownScheduler\ShutdownScheduler.exe")
+Write-Host (Join-Path $root "dist\ShutdownScheduler.exe")
