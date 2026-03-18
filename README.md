@@ -14,6 +14,8 @@
 
 가장 쉬운 방법은 GitHub Releases에서 Windows ZIP 파일을 내려받아 압축을 풀고 실행하는 것입니다.
 
+- 다운로드: [Latest Release](https://github.com/alufia/shutdown-scheduler/releases/latest)
+
 1. Releases 페이지에서 최신 버전을 다운로드합니다.
 2. ZIP 압축을 풉니다.
 3. `ShutdownScheduler.exe`를 실행합니다.
